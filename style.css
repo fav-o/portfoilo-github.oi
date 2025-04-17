@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.header-text {
+    margin-top: 50px;
+}
+.header-text h1 {
+    font-size: 2.5rem;
+}
+.header-text span {
+    color: #007bff;
+}
+.sub-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.figma-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 20px 0;
+}
+
+.figma-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.service-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.service-item:hover {
+    transform: translateY(-10px);
+}
+.service-item i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.learn-more-btn {
+    color: #007bff;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+.service-details {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+}
+.tech-tag {
+    background: #e9ecef;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.work {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.work img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+.layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+.work:hover .layer {
+    transform: translateY(0);
+}
+.contact-left {
+    flex: 1;
+}
+.contact-right {
+    flex: 1;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.social-icons {
+    margin: 20px 0;
+}
+.social-icons a {
+    margin-right: 15px;
+    color: #007bff;
+    font-size: 1.5rem;
+}
+footer {
+    background: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+/* Added styles for phone link */
+.phone-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.phone-container i {
+    margin-right: 10px;
+}
+.phone-link {
+    color: #333;
+    text-decoration: none;
+}
+.desktop-call-options {
+    display: none;
+    margin-left: 10px;
+}
+.desktop-call-options a {
+    margin-left: 10px;
+    color: #007bff;
+    font-size: 1.2rem;
+}
